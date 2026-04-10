@@ -1315,7 +1315,7 @@ p.prvcytxt{text-align:left; font-size:17px;}
 @media (max-width:768px){}
 @media (max-width:767px){
 .exprtsctn .txtbx p{text-align:center;}
-.exprtsctn .txtbx h3{text-align:center;}
+.exprtsctn .txtbx h3{text-align:center; color: #de641c;}
 .lowerrowsctn .imgbx{
 	text-align:left;
 	border-right:none;
