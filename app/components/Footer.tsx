@@ -20,7 +20,7 @@ const Footer = () => {
 						
 						<div className="col-md-3 col-sm-6">
 							<div className="footrbx">
-								<h3>Quick Links</h3>
+								<h2>Quick Links</h2>
 								<ul className="srvcnav">
 									<li><a href="/">Home</a></li>
 									<li><a href="/about">About Us</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
 						
 						<div className="col-md-3 col-sm-6">
 							<div className="footrbx">
-								<h3>Products We offer</h3>
+								<h2>Products We offer</h2>
 								<ul className="srvcnav">
 									<li><a href="/flame-resistant-coverall">FR Coveralls</a></li>
 									<li><a href="/flame-resistant-jacket">FR Jackets</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
 		
 						<div className="col-md-3 col-sm-6 visible-lg visible-md visible-sm">
 							<div className="footrbx">
-								<h3>&nbsp;</h3>
+								<h2>&nbsp;</h2>
 								<ul className="srvcnav">
 									<li><a href="/flame-resistant-t-shirts">FR T-Shirt</a></li>
 									<li><a href="/flame-resistant-hoods-balaclava">FR Hoods / FR Balaclava</a></li>
