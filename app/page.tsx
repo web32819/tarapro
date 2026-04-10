@@ -206,7 +206,7 @@ export default function Home() {
 						<div className="col-md-3 col-sm-4 col-xs-6">
 							<div className="boxcntnr">
 								<div className="boxcntnrimgbx">
-									<img src="images/oil-gas-range-image.webp" className="img-responsive" alt=""/>
+									<img src="/images/oil-gas-range-image.webp" className="img-responsive" alt=""/>
 									<a href="/fr-clothing/oil-gas-fr-clothing" className="">
 									<div className="overlay">
 										<div className="text">
@@ -263,7 +263,7 @@ export default function Home() {
 						<div className="col-md-3 col-sm-4 col-xs-6 ">
 							<div className="boxcntnr">
 								<div className="boxcntnrimgbx">
-									<img src="images/performance-range-image.webp" className="img-responsive" alt=""/>
+									<img src="/images/performance-range-image.webp" className="img-responsive" alt=""/>
 									<a href="/fr-clothing/performance-wear-clothing" className="">
 									<div className="overlay">
 										<div className="text">
