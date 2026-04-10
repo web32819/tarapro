@@ -56,15 +56,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			
 			{/* ✅ Social Bar (ADD HERE) */}
 			<div className="social-bar visible-lg visible-md visible-sm">
-				<a href="https://www.facebook.com/TaraproFR" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.facebook.com/TaraproFR" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
 				  <i className="fab fa-facebook-f"></i>
 				</a>
 
-				<a href="https://www.linkedin.com/company/tara-lohia-pvt-ltd-/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.linkedin.com/company/tara-lohia-pvt-ltd-/" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
 				  <i className="fab fa-linkedin-in"></i>
 				</a>
 
-				<a href="https://www.instagram.com/taraprofr/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.instagram.com/taraprofr/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
 				  <i className="fab fa-instagram"></i>
 				</a>
 			</div>
