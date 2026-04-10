@@ -54,9 +54,9 @@ export default function Home() {
 											</div>
 										</div>
 									</div>
-									<img src="images/banner-one.webp" className="img-responsive visible-lg visible-md" alt=""/>
-									<img src="images/banner-one-ipad.webp" className="img-responsive visible-sm" alt=""/>
-									<img src="images/banner-one-mb.webp" className="img-responsive visible-xs" alt=""/>
+									<img src="/images/banner-one.webp" className="img-responsive visible-lg visible-md" alt=""/>
+									<img src="/images/banner-one-ipad.webp" className="img-responsive visible-sm" alt=""/>
+									<img src="/images/banner-one-mb.webp" className="img-responsive visible-xs" alt=""/>
 								</div>
 
 							</div>
@@ -112,7 +112,7 @@ export default function Home() {
 									<h1 className="visible-xs">Primary Hazards</h1>
 								</div>
 								<div className="col-md-10 col-sm-10 no-pad">
-									<img src="images/flashfirebx-image-new.webp" className="img-responsive" alt=""/>
+									<img src="/images/flashfirebx-image-new.webp" className="img-responsive" alt=""/>
 									<div className="txtbox">
 										<h2>Protection <br className="visible-lg visible-md"/>from Flash Fire</h2>
 										<p>Incidents of flash fire are common in oil and gas, petrochemical and other industries. Workers are exposed to fires, toxic fumes and other hazardous risks. Proper flame resistant clothing will guard the worker from thermal flashes and allow them sufficient time to escape and avoid serious injuries.</p>
@@ -124,7 +124,7 @@ export default function Home() {
 						
 						<div className="col-md-6 col-sm-6 no-pad">
 							<div className="elctrcflshbx">
-								<img src="images/elctrcflshbx-image.webp" className="img-responsive visible-xs" alt=""/>
+								<img src="/images/elctrcflshbx-image.webp" className="img-responsive visible-xs" alt=""/>
 								<div className="txtbox">
 									<h2>Protection <br className="visible-lg visible-md"/>from Electric <br className="visible-lg visible-md"/>Arc Flash </h2>
 									<p>Arc rated FR clothing protects workers from arc flashes that can cause second degree burns. AR protective garments undergo strict testing for the determination of level of protection.</p>
