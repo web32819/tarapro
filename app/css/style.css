@@ -1420,6 +1420,7 @@ p.prvcytxt{text-align:left; font-size:17px;}
 .prdctbxdtls .scndbx .boxcntnrimgbx{padding:4px 0;}
 .crtfctsctn h1{font-size:35px; margin-bottom:30px;}
 .prdctbxdtls .fstbx a .overlay .arrw{padding:10px;}
+.exprtsctn .txtbx h3{color:#de641c;}
 }
 @media (max-width:390px){
 .rngsctn .boxcntnr h3{font-size: 18px;}
