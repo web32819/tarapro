@@ -15,9 +15,13 @@ export const metadata = {
 
   openGraph: {
     title: "Tarapro India | Fire Resistant(FR) Clothing & Arc Flash Suits",
+	
     description: "Tarapro from India is a leading manufacturer & exporter of Flame Resistant Clothing and Arc Flash Suits.",
+	
     url: "/",
+	
     siteName: "Tarapro",
+	
     images: [
       {
         url: "https://taralohia.com/images/banner-one-ipad.webp",

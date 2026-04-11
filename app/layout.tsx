@@ -28,20 +28,44 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
 		<head>
 			<link rel="shortcut icon" href="/images/favicon.ico" />
-			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"/>
-			<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" type="text/css"/>
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossOrigin="anonymous" />
-			
-			{/* Google Tag Manager */}
-			<Script id="gtm-script" strategy="afterInteractive">
-			  {`
-				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-				})(window,document,'script','dataLayer','GTM-NRT2RJQ');
-			  `}
-			</Script>
+
+  {/* ✅ Preconnect FIRST — before any font loads */}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+  <link rel="preconnect" href="https://use.fontawesome.com" crossOrigin="anonymous" />
+
+  {/* ✅ Combine BOTH fonts into ONE request */}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;600;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  {/* ✅ Load FontAwesome without blocking */}
+  <link
+    rel="preload"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    as="style"
+    crossOrigin="anonymous"
+    onLoad="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      crossOrigin="anonymous"
+    />
+  </noscript>
+
+  {/* Google Tag Manager */}
+  <Script id="gtm-script" strategy="afterInteractive">
+    {`
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NRT2RJQ');
+    `}
+  </Script>
 			{/* End Google Tag Manager */}
 			
 		</head>

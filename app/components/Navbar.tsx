@@ -42,7 +42,7 @@ export default function Navbar() {
 
               {/* Dropdown */}
               <li className="nav-item dropdown">
-                <Link href="/fr-clothing"  className="nav-link dropdown-toggle" data-toggle="dropdown" > Product </Link>
+                <Link href="/fr-clothing" className="nav-link dropdown-toggle" data-toggle="dropdown">Product</Link>
 
                 <div className="dropdown-menu dropdown-large menusctn">
                   <div className="container">
