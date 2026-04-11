@@ -29,24 +29,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<head>
 			<link rel="shortcut icon" href="/images/favicon.ico" />
 
-  {/* ✅ Preconnect FIRST — before any font loads */}
+  {/* Preconnect */}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
   <link rel="preconnect" href="https://use.fontawesome.com" crossOrigin="anonymous" />
 
-  {/* ✅ Combine BOTH fonts into ONE request */}
+  {/* Combined Google Fonts - Single Request */}
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;600;700;900&display=swap"
     rel="stylesheet"
   />
 
-  {/* ✅ Load FontAwesome without blocking */}
+  {/* FontAwesome - Non Blocking */}
   <link
     rel="preload"
     href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     as="style"
     crossOrigin="anonymous"
-    onLoad="this.onload=null;this.rel='stylesheet'"
+    onLoad={(e) => {
+      const link = e.currentTarget as HTMLLinkElement;
+      link.onload = null;
+      link.rel = "stylesheet";
+    }}
   />
   <noscript>
     <link
