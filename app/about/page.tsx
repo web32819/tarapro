@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import Image from 'next/image';
+
 export const metadata = {
   title: "About Us | Leading manufacturer of FR clothing India | Tarapro", 
   
@@ -52,9 +54,40 @@ export default function Home() {
 											</div>
 										</div>
 									</div>
-									<img src="/images/about-banner.webp" className="img-responsive visible-lg visible-md" alt=""/>
-									<img src="/images/about-banner-ipad.webp" className="img-responsive visible-sm" alt=""/>
-									<img src="/images/about-banner-mb.webp" className="img-responsive visible-xs" alt=""/>
+									
+									 {/* Desktop */}
+									  <div className="visible-lg visible-md" style={{ position: 'relative', width: '100%', height: '800px' }}>
+										<Image
+										  src="/images/about-banner.webp"
+										  alt="About Us Banner"
+										  fill
+										  style={{ objectFit: 'cover' }}
+										  priority
+										/>
+									  </div>
+									  
+									     {/* Tablet */}
+									  <div className="visible-sm" style={{ position: 'relative', width: '', height: '800px' }}>
+										<Image
+										  src="/images/about-banner-ipad.webp"
+										  alt="About Us Banner Tablet"
+										  fill
+										  style={{ objectFit: 'cover' }}
+										  priority
+										/>
+									  </div>
+									    {/* Mobile */}
+										  <div className="visible-xs" style={{ position: 'relative', width: '', height: '1000px' }}>
+											<Image
+											  src="/images/about-banner-mb.webp"
+											  alt="About Us Banner Mobile"
+											  fill
+											  style={{ objectFit: 'cover' }}
+											  priority
+											/>
+										  </div>
+									  
+									  
 								</div>
 							</div>
 						</div>
