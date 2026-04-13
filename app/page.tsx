@@ -62,7 +62,7 @@ export default function Home() {
 									</div>
 									
 									<div className="" style={{ position: 'relative', width: '100%', height: '900px' }}>
-										<Image src="/images/banner-one.webp" alt="About Us Banner" width={1920} height={900} style={{ width: '100%', height: 'auto' }} decoding="async" data-nimg="fill" fetchPriority="high" />
+										<Image src="/images/banner-one.webp" alt="About Us Banner" width={1920} height={900} style={{ width: '100%', height: 'auto' }} decoding="async" data-nimg="fill" fetchPriority="high" loading="lazy" />
 									</div>
 									
 									
