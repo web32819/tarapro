@@ -1283,6 +1283,19 @@ p.prvcytxt{text-align:left; font-size:17px;}
     color: #FFF;
     outline: none;
     border: none;
+	margin-bottom:0;
+	transition: all .3s;
+}
+.bttnpagination .bttncd:hover{background:#000;}
+.bttnpagination button.nextbttn{
+	background:;
+	outline:none;
+	border:none;
+}
+.bttnpagination button.prvsbttn{
+	background:;
+	outline:none;
+	border:none;
 }
 /* MEDIA QUERY CSS STARTS HERE */	
 @media only screen and (orientation:portrait){}

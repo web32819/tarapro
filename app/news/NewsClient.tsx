@@ -138,7 +138,7 @@ const newsItems = [
   },
 ];
 
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 4;
 
 export default function NewsClient() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -219,13 +219,13 @@ export default function NewsClient() {
 			  
 				<div className="bttnpagination">
 
-					<button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>&laquo; Prev</button>
+					<button className="prvsbttn" onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>&laquo; Prev</button>
 
 					{Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
 					  <button className="bttncd" key={page} onClick={() => handlePageChange(page)} >{page} </button>
 					))}
 
-					<button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} > Next &raquo; </button>
+					<button className="nextbttn" onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} > Next &raquo; </button>
 				</div>
 
             </div>
