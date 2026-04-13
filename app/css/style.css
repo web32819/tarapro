@@ -1184,7 +1184,6 @@ p.prvcytxt{text-align:left; font-size:17px;}
 }
 .pstn .bannrTxtbox{top: 40vh;}
 .newsbnnr img{height:auto !important;}
-.newsbx{}
 .hr{border-top:1px solid #e4e4e4; margin-top:30px; margin-bottom:30px;}
 .newsbx .nwsimgbx{margin-bottom:10px;}
 .newsbx .nwstxtbx h3{text-align:left; margin-bottom:10px;}
@@ -1268,6 +1267,22 @@ p.prvcytxt{text-align:left; font-size:17px;}
     width: 66px;
     height: 49px;
     right: 70px;
+}
+.bttnpagination{
+	flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+	grid-column-gap: 8px;
+	margin-top:40px;
+}
+.bttnpagination .bttncd{
+	padding: 7px 15px;
+    background: #f2752c;
+    color: #FFF;
+    outline: none;
+    border: none;
 }
 /* MEDIA QUERY CSS STARTS HERE */	
 @media only screen and (orientation:portrait){}
