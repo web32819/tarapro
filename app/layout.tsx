@@ -26,6 +26,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
+		
+		 <link
+          rel="preload"
+          href="/_next/static/chunks/5aa14f68597c2300.css"
+          as="style"
+        />
+		
+        <link
+          rel="preload"
+          href="/_next/static/chunks/c5f880c63f8f38ec.css"
+          as="style"
+        />
+		
+		<link
+          rel="preload"
+          href="/_next/static/chunks/tarapro_app_css_2ba462f8._.css"
+          as="style"
+        />
+		
         <link rel="shortcut icon" href="/images/favicon.ico" />
 
         {/* Preconnect */}

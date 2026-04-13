@@ -61,29 +61,10 @@ export default function Home() {
 										</div>
 									</div>
 									
-									<div className="visible-lg visible-md" style={{ position: 'relative', width: '100%', height: '900px' }}>
-										<Image
-										  src="/images/banner-one.webp"
-										  alt="About Us Banner"
-										  fill
-										  style={{ objectFit: 'cover' }}
-										  priority
-										/>
+									<div className="" style={{ position: 'relative', width: '100%', height: '900px' }}>
+										<Image src="/images/banner-one.webp" alt="About Us Banner" width={1920} height={900} style={{ width: '100%', height: 'auto' }} decoding="async" data-nimg="fill" fetchPriority="high" />
 									</div>
 									
-									<div className="visible-sm" style={{ position: 'relative', width: '', height: '800px' }}>
-										<Image
-										  src="/images/banner-one-ipad.webp"
-										  alt="About Us Banner Tablet"
-										  fill
-										  style={{ objectFit: 'cover' }}
-										  priority
-										/>
-									</div>
-									
-									<div className="visible-xs" style={{ position: 'relative', width: '', height: '1000px' }}>
-										<Image src="/images/about-banner-mb.webp" alt="About Us Banner Mobile" fill style={{ objectFit: 'cover' }} priority />
-									</div>
 									
 								</div>
 								
