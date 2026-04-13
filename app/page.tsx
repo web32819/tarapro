@@ -96,7 +96,7 @@ export default function Home() {
             {/* Mobile */}
             <div
               className="visible-xs"
-              style={{ position: 'relative', width: '100%', height: '300px' }}
+              style={{ position: 'relative', width: '100%', height: '900px' }}
             >
               <Image
                 src="/images/banner-one-mb.webp"
