@@ -147,7 +147,7 @@ export default function NewsClient() {
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentItems = newsItems.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
-  const handlePageChange = (page) => {
+  const handlePageChange = (page:number) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
