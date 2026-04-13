@@ -61,9 +61,53 @@ export default function Home() {
 										</div>
 									</div>
 									
-									<div className="" style={{ position: 'relative', width: '100%', height: '900px' }}>
-										<Image src="/images/banner-one.webp" alt="About Us Banner" width={1920} height={900} style={{ width: '100%', height: 'auto' }} decoding="async" data-nimg="fill" fetchPriority="high" loading="lazy" />
-									</div>
+									{/* Desktop */}
+            <div
+              className="visible-lg visible-md"
+              style={{ position: 'relative', width: '100%', height: '900px' }}
+            >
+              <Image
+                src="/images/banner-one.webp"
+                alt="Banner"
+                fill
+                style={{ objectFit: 'cover' }}
+                priority              // ✅ disables lazy loading
+                fetchPriority="high"  // ✅ high priority download
+                sizes="100vw"         // ✅ helps browser pick right size
+              />
+            </div>
+
+            {/* Tablet */}
+            <div
+              className="visible-sm"
+              style={{ position: 'relative', width: '100%', height: '500px' }}
+            >
+              <Image
+                src="/images/banner-one-ipad.webp"
+                alt="Banner Tablet"
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+              />
+            </div>
+
+            {/* Mobile */}
+            <div
+              className="visible-xs"
+              style={{ position: 'relative', width: '100%', height: '300px' }}
+            >
+              <Image
+                src="/images/banner-one-mb.webp"
+                alt="Banner Mobile"
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+              />
+            </div>
 									
 									
 								</div>
